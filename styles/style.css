@@ -6,6 +6,8 @@ button {
     color: inherit;
     font: inherit;
     margin: 0;
+    border: rgb(255, 255, 255) solid 1px;
+    text-transform: uppercase;
 }
 
 body {
@@ -166,11 +168,6 @@ body {
     width: 257px;
     height: 52px;
     background-color: transparent
-}
-
-button {
-    border: rgb(255, 255, 255) solid 1px;
-    text-transform: uppercase;
 }
 
 .lots {
