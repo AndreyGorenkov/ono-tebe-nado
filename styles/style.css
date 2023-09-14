@@ -1,26 +1,4 @@
-address {
-    font-style: normal
-  }
-
-button {
-    color: inherit;
-    font: inherit;
-    margin: 0;
-    border: rgb(255, 255, 255) solid 1px;
-    text-transform: uppercase;
-}
-
-body {
-    margin: 0 auto;
-    width: 1440px;
-    height: 2844px;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    background-color: #FFF;
-}
-
 .header {
-    width: 1340px;
-    height: 109px;
     margin: 92px 49px 92px 51px;
     color: #000;
     font-size: 18px;
@@ -65,25 +43,23 @@ body {
 
 .logo__header {
     display: block;
-    max-width: 148px;
-    max-height: 105px;
+    width: 148px;
+    height: 105px;
 }
 
 .main {
     width: 100%;
-    height: auto;
 }
 
 .cover {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: stretch;
     position: relative;
-    width: 100%;
-    height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
+    background-position: center;  
 }
 
 .background__half-transparent {
@@ -96,16 +72,11 @@ body {
 
 .title__main {
     z-index: 1;
-    display: block;
-    height: 355px;
-    width: 1340px;
-    margin-top: 165px;
-    margin-bottom: 135px;
+    margin: 165px 50px 135px;
 }
 
 .span_title__main {
     display: block;
-    height: 115px;
     color: #FFF;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 100px;
@@ -120,25 +91,24 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    line-height: 115%;
 }
 
 .second_span__main {
     display: flex;
     justify-content: center;
-    height: 100px;
     margin-bottom: 20px;
 }
 
 .third_span__main {
     display: flex;
     justify-content: end;
-    height: 100px;
 }
 
 .second_line_main {
     z-index: 1;
     display: flex;
-    margin-right: 50px;
+    margin: 0 50px 50px 0;
     align-items: center;
     align-self: flex-end;
     gap: 78px;
@@ -171,12 +141,9 @@ body {
 }
 
 .lots {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 1340px;
-    height: 579px;
-    margin: 180px auto;
+    margin: 180px 50px;
 }
 
 .subtitle_lots__main {
@@ -192,68 +159,43 @@ body {
 
 .list_lots__main {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     gap: 25px;
-    justify-content: space-between;
-    max-height: 450px;
     margin-top: 27px;
     margin-bottom: 30px;
 }
 
-.list_lots__first_element {
+.list_elements__lots {
     min-height: 450px;
-    max-width: 430px;
+    width: 430px;
     flex-grow: 1;
-    background-image: url(../images/card-lot-01.jpg);
+    position: relative;
+}
+
+.card_type__lots{
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
+    background-position: center;
+}
+
+.list_lots__first_element {
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .list_lots__second_element {
-    min-height: 450px;
-    max-width: 430px;
-    flex-grow: 1;
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
 .list_lots__third_element {
-    box-sizing: border-box;
-    min-height: 450px;
-    max-width: 430px;
-    flex-grow: 1;
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
    }
 
 .link__lots {
     text-decoration: none;
 }
 
-.first_text_contetnt__lots {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px 40px;
-}
-
-.second_text_contetnt__lots {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px 40px;
-}
-
-.third_text_contetnt__lots {
+.text_contetnt__lots {
     height: 100%;
     width: 100%;
     display: flex;
@@ -296,12 +238,9 @@ body {
 
 .about {
     display: grid;
-    column-gap: 25px;
-    grid-template-columns: 430px 885px;
-    grid-template-rows: 487px 487px;
+    column-gap: 15px;
+    grid-template-columns: 1fr 2fr;
     margin: 0 50px 180px;
-    width: 1340px;
-    height: 487px;
 }
 
 .container_logo__about {
@@ -322,6 +261,7 @@ body {
 }
 
 .list_about {
+    padding-top: 105px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -346,8 +286,6 @@ body {
 }
 
 .footer {
-    width: 1340px;
-    height: 97px;
     margin: 0 50px;
     color: #000;
     font-size: 18px;
@@ -389,7 +327,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 240px;
-    height: 48px;
     list-style-type: none;
 }
 
